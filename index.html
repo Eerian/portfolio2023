@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Erion Pali.</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Comfortaa:700"
+      rel="stylesheet"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"
+    />
+
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div id="app-wrapper">
+      <div id="loading">
+        <div id="spinner"></div>
+      </div>
+      <div id="hero-section">
+        <div
+          id="header"
+          class="animated slideInDown"
+          style="animation-delay: 1.8s"
+        >
+          <!-- <div id="title">Erion Pali.</div> -->
+          <div id="name-logo">
+            <img src="./img/name-logo.png" />
+          </div>
+          <br />
+          <div id="links">
+            <a href="#skills">skills</a>
+            <a href="#work">works</a>
+            <a href="#contact">contact</a>
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              id="resume"
+              href="https://www.dropbox.com/s/bq88ocqu3usjxjd/Erion%20Pali%20Resume.pdf?dl=0"
+              >resume</a
+            >
+          </div>
+        </div>
+        <div id="middle">
+          <div
+            id="tagline"
+            class="animated zoomIn"
+            style="animation-delay: 1.8s"
+          >
+            "Always code as if the guy who ends up maintaining your code will be
+            a violent psychopath who knows where you live"<br />
+            <button class="btn_one">haha ok</button>
+          </div>
+        </div>
+      </div>
+      <div id="about">
+        <div class="profile-pic">
+          <img src="./img/profile-pic.jpeg" />
+        </div>
+        <div>
+          <p>
+            As a self-taught software developer based in NYC, I transitioned
+            from a background in non-clinical healthcare administration and have
+            passionately pursued coding, utilizing my diverse experience to
+            create innovative solutions in the tech industry.
+          </p>
+          <div id="details">
+            <!-- <a class="btn_social"><i class="fas fa-phone"></i></a> -->
+            <a href="mailto:palierion@gmail.com" class="btn_social"
+              ><i class="fas fa-at"></i
+            ></a>
+            <a
+              href="https://twitter.com/e3rian"
+              target="_blank"
+              rel="noreferrer"
+              class="btn_social"
+              ><i class="fab fa-twitter"></i
+            ></a>
+            <a
+              href="https://www.linkedin.com/in/erion-pali-19560088/"
+              target="_blank"
+              rel="noreferrer"
+              class="btn_social"
+              ><i class="fab fa-linkedin"></i
+            ></a>
+            <a
+              href="https://github.com/Eerian"
+              target="_blank"
+              rel="noreferrer"
+              class="btn_social"
+              ><i class="fab fa-github"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+      <div id="portfolio">
+        <div id="skills">
+          <h1>skills.</h1>
+          <div class="skills-icons">
+            <div class="developer-icon">
+              <i class="devicon-html5-plain"></i>
+              <p class="developer-icon-name">HTML</p>
+            </div>
+            <div class="developer-icon">
+              <i class="devicon-css3-plain"></i>
+              <p class="developer-icon-name">CSS</p>
+            </div>
+            <div class="developer-icon">
+              <i class="devicon-javascript-plain"></i>
+              <p class="developer-icon-name">JavaScript</p>
+            </div>
+            <div class="developer-icon">
+              <i class="devicon-react-original"></i>
+              <p class="developer-icon-name">React</p>
+            </div>
+            <div class="developer-icon">
+              <i class="devicon-ruby-plain"></i>
+              <p class="developer-icon-name">Ruby</p>
+            </div>
+            <div class="developer-icon">
+              <i class="devicon-nodejs-plain"></i>
+              <p class="developer-icon-name">Node.js</p>
+            </div>
+            <div class="developer-icon">
+              <i class="devicon-express-original"></i>
+              <p class="developer-icon-name">Express</p>
+            </div>
+            <div class="developer-icon">
+              <i class="devicon-mongodb-plain"> </i>
+              <p class="developer-icon-name">MongoDB</p>
+            </div>
+            <div class="developer-icon">
+              <i class="devicon-git-plain"></i>
+              <p class="developer-icon-name">Git</p>
+            </div>
+          </div>
+        </div>
+
+        <div id="work">
+          <h1>works.</h1>
+          <div class="project-box">
+            <h2>Daily Flix</h2>
+            <div class="project">
+              <img src="./img/dailyflix.png" />
+              <div class="project-description">
+                <div>
+                  A React project that pulls movie data from a third-party API
+                  and displays movie cards in a grid. When you click the cards
+                  you are directed to more details about the movies such as
+                  actors, description, add to favorites or watch later. You can
+                  also sort movies by genre.
+                </div>
+                <div class="project-btns">
+                  <a
+                    href="https://chingu-voyages.github.io/v24-geckos-team-03/"
+                    target="_blank"
+                    rel="noreferrer"
+                    ><button class="btn_one">live</button></a
+                  >
+                  <a
+                    href="https://github.com/Eerian/v24-geckos-team-03"
+                    target="_blank"
+                    rel="noreferrer"
+                    ><button class="btn_two">code</button></a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="project-box">
+            <h2>Quizzical</h2>
+            <div class="project">
+              <img src="./img/quizzical.png" />
+              <div class="project-description">
+                <div>
+                  A React app that utililez an API called 'opentdb' to pull
+                  trivia questions and answers. Then randomly displays them in a
+                  multiple choice format. After submitting answers you get feed
+                  back on which answers you got wrong and correct.
+                </div>
+                <div class="project-btns">
+                  <a
+                    href="https://main--comfy-boba-604554.netlify.app/"
+                    target="_blank"
+                    rel="noreferrer"
+                    ><button class="btn_one">live</button></a
+                  >
+                  <a
+                    href="https://github.com/Eerian/quizzical-app"
+                    target="_blank"
+                    rel="noreferrer"
+                    ><button class="btn_two">code</button></a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="project-box">
+            <h2>GameHub</h2>
+            <div class="project">
+              <img src="./img/gamehub.png" />
+              <div class="project-description">
+                <div>
+                  A game store that allows users to browse games and learn more
+                  when clicking on each game. Users can add to cart their
+                  favorite games. App also has register/login functionality from
+                  the backend using mondgodb
+                </div>
+                <div class="project-btns">
+                  <a
+                    href="https://sage-selkie-bf441e.netlify.app/"
+                    target="_blank"
+                    rel="noreferrer"
+                    ><button class="btn_one">live</button></a
+                  >
+                  <a
+                    href="https://github.com/Eerian/gamehub"
+                    target="_blank"
+                    rel="noreferrer"
+                    ><button class="btn_two">code</button></a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="contact">
+            <h1>contact.</h1>
+            <form method="POST" action="https://formspree.io/f/xlekzypk">
+              <input type="text" placeholder="name" name="name" required />
+              <input
+                type="email"
+                placeholder="email"
+                name="email"
+                required
+              /><br />
+              <textarea
+                placeholder="your message"
+                name="message"
+                required
+                rows="5"
+              ></textarea
+              ><br />
+              <button class="btn_one">send</button>
+            </form>
+            <div id="details">
+              <!-- <a class="btn_social"><i class="fas fa-phone"></i></a> -->
+              <a href="mailto:palierion@gmail.com" class="btn_social"
+                ><i class="fas fa-at"></i
+              ></a>
+              <a
+                href="https://twitter.com/e3rian"
+                target="_blank"
+                rel="noreferrer"
+                class="btn_social"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com/in/erion-pali-19560088/"
+                target="_blank"
+                rel="noreferrer"
+                class="btn_social"
+                ><i class="fab fa-linkedin"></i
+              ></a>
+              <a
+                href="https://github.com/Eerian"
+                target="_blank"
+                rel="noreferrer"
+                class="btn_social"
+                ><i class="fab fa-github"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="footer">
+        made on earth by a human <br /><br />
+        <a href="https://github.com/Eerian" target="_blank" rel="noreferrer"
+          >Erion Pali</a
+        >
+      </div>
+    </div>
+    <script
+      src="https://kit.fontawesome.com/294d818243.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="index.js" type="text/javascript"></script>
+  </body>
+</html>
