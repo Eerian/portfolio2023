@@ -313,7 +313,7 @@ html {
 }
 
 .btn_two {
-  border: 1px transparent;
+  border: 2px solid #00c6ff;
   color: #fff;
   background: #00c6ff;
 }
