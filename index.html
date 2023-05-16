@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Erion Pali.</title>
+    <title>Erion Pali</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css"
@@ -18,18 +18,25 @@
       integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
       crossorigin="anonymous"
     ></script>
-    <link
+    <!-- <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
       integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
       crossorigin="anonymous"
-    />
+    /> -->
+
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"
     />
-
     <link rel="stylesheet" href="index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
     <div id="app-wrapper">
@@ -42,12 +49,10 @@
           class="animated slideInDown"
           style="animation-delay: 1.8s"
         >
-          <!-- <div id="title">Erion Pali.</div> -->
           <div id="name-logo">
             <img src="./img/name-logo.png" />
           </div>
-          <br />
-          <div id="links">
+          <div id="links" class="links-container">
             <a href="#skills">skills</a>
             <a href="#work">works</a>
             <a href="#contact">contact</a>
@@ -68,7 +73,7 @@
           >
             "Always code as if the guy who ends up maintaining your code will be
             a violent psychopath who knows where you live"<br />
-            <button class="btn_one">haha ok</button>
+            <a href="#contact"><button class="btn_one">Connect</button></a>
           </div>
         </div>
       </div>
@@ -78,10 +83,13 @@
         </div>
         <div>
           <p>
-            As a self-taught software developer based in NYC, I transitioned
-            from a background in non-clinical healthcare administration and have
-            passionately pursued coding, utilizing my diverse experience to
-            create innovative solutions in the tech industry.
+            Self-taught coder here, spinning code magic on both the flashy
+            frontend and the tough backend. On the prowl for the latest tech
+            trends like a cat after a laser pointer. Whether it's a solo code
+            marathon or a team coding fest, I'm turning tech gibberish into a
+            walk in a user-friendly park. When my coding skills sync with your
+            business targets, it's like fries meeting ketchup - an unbeatable
+            duo.
           </p>
           <div id="details">
             <!-- <a class="btn_social"><i class="fas fa-phone"></i></a> -->
@@ -161,8 +169,8 @@
             <h2>Daily Flix</h2>
             <div class="project">
               <img src="./img/dailyflix.png" />
-              <div class="project-description">
-                <div>
+              <div class="project-description-wrapper">
+                <div class="project-description">
                   A React project that pulls movie data from a third-party API
                   and displays movie cards in a grid. When you click the cards
                   you are directed to more details about the movies such as
@@ -190,8 +198,8 @@
             <h2>Quizzical</h2>
             <div class="project">
               <img src="./img/quizzical.png" />
-              <div class="project-description">
-                <div>
+              <div class="project-description-wrapper">
+                <div class="project-description">
                   A React app that utililez an API called 'opentdb' to pull
                   trivia questions and answers. Then randomly displays them in a
                   multiple choice format. After submitting answers you get feed
@@ -218,8 +226,8 @@
             <h2>GameHub</h2>
             <div class="project">
               <img src="./img/gamehub.png" />
-              <div class="project-description">
-                <div>
+              <div class="project-description-wrapper">
+                <div class="project-description">
                   A game store that allows users to browse games and learn more
                   when clicking on each game. Users can add to cart their
                   favorite games. App also has register/login functionality from
@@ -298,10 +306,10 @@
         >
       </div>
     </div>
-    <script
+    <!-- <script
       src="https://kit.fontawesome.com/294d818243.js"
       crossorigin="anonymous"
-    ></script>
+    ></script> -->
     <script src="index.js" type="text/javascript"></script>
   </body>
 </html>

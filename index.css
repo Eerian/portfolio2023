@@ -2,7 +2,7 @@ body,
 html {
   padding: 0px;
   margin: 0px;
-  font-family: "Comfortaa", cursive;
+  font-family: 'Comfortaa', cursive;
   font-weight: bold;
   color: #fff;
   background: rgb(0, 0, 0);
@@ -74,11 +74,16 @@ html {
   color: #00c6ff;
 }
 
+.links-container {
+  display: flex;
+  justify-content: center;
+}
+
 #middle {
   width: 100%;
   background: linear-gradient(0deg, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)),
     /* url('https://images.unsplash.com/photo-1494587351196-bbf5f29cff42?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&&w=1351&q=80') */
-      url("https://images.unsplash.com/photo-1523961131990-5ea7c61b2107?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2048&q=80")
+      url('https://images.unsplash.com/photo-1523961131990-5ea7c61b2107?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2048&q=80')
       center center fixed;
   background-size: 100% auto;
   background-repeat: no-repeat;
@@ -95,7 +100,7 @@ html {
   width: 60%;
   margin: 0 auto;
   text-align: center;
-  margin-top: 10%;
+  margin-top: 12%;
   margin-bottom: 5%;
 }
 
@@ -113,7 +118,7 @@ html {
 }
 
 #about p {
-  margin-top: 10%;
+  margin-top: 5%;
 }
 
 .profile-pic {
@@ -132,10 +137,37 @@ html {
   border-radius: 10px;
 }
 
+#details {
+  margin: 6vh 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.btn_social {
+  font-size: 20px;
+  color: #fff;
+  margin-right: 5px;
+  padding: 15px 18px;
+  border-radius: 50%;
+  background: #000;
+  transition: 0.4s ease-in-out;
+}
+
+.btn_social:hover {
+  color: #000;
+  background: #fff;
+  cursor: pointer;
+}
+
+.fa-twitter {
+  color: #1da1f2;
+}
+
 #portfolio {
   max-width: 80%;
   margin: 0 auto;
-  padding: 5%;
+  padding: 2rem;
 }
 
 #portfolio div h1 {
@@ -149,13 +181,11 @@ html {
   -moz-animation: Gradient 20s ease infinite;
   -o-animation: Gradient 20s ease infinite;
   animation: Gradient 20s ease infinite;
-  font-family: "Comfortaa", cursive;
+  font-family: 'Comfortaa', cursive;
 }
 
 #skills {
   margin: 0 auto;
-  /* margin: 4vh 0px !important;
-  padding: 2vh 0px !important; */
   width: 80%;
 }
 
@@ -165,7 +195,8 @@ html {
   text-align: center;
   color: #fff;
   padding: 0 20px;
-  justify-content: space-around;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 
 .developer-icon {
@@ -179,7 +210,7 @@ html {
   visibility: hidden;
   font-size: 1rem;
   margin-top: -5px;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 .developer-icon:hover {
@@ -197,8 +228,6 @@ html {
 }
 
 #work {
-  /* margin: 4vh 0px !important;
-  padding: 2vh 0px !important; */
   width: 80%;
   margin: 0 auto;
 }
@@ -213,11 +242,19 @@ html {
 }
 
 .project img {
-  min-width: 400px;
-  height: 200px;
+  flex: 1;
+  max-width: 35%;
+  height: auto;
+  object-fit: cover;
   opacity: 0.8;
   transform: scale(1);
   transition: transform 0.5s, opacity 0.5s;
+}
+
+.project-img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
 }
 
 .project img:hover {
@@ -225,12 +262,11 @@ html {
   opacity: 1;
 }
 
-.project-description {
+.project-description-wrapper {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  flex: 1;
   margin-left: 3%;
-  padding-right: 3%;
 }
 
 #contact {
@@ -248,7 +284,7 @@ html {
   border: 0px;
   border-bottom: 2px solid rgba(255, 255, 255, 0.5);
   padding: 8px 10px;
-  font-family: "Comfortaa", cursive;
+  font-family: 'Comfortaa', cursive;
   font-size: 18px;
   transition: 0.4s ease-in-out;
   color: #fff;
@@ -261,7 +297,7 @@ html {
   border: 0px;
   border-bottom: 2px solid rgba(255, 255, 255, 0.5);
   padding: 8px 10px;
-  font-family: "Comfortaa", cursive;
+  font-family: 'Comfortaa', cursive;
   font-size: 18px;
   background: transparent;
   resize: none;
@@ -295,7 +331,7 @@ html {
   border-radius: 50px;
   border: 2px solid #fff;
   font-size: 18px;
-  font-family: "Comfortaa", cursive;
+  font-family: 'Comfortaa', cursive;
   font-weight: bold;
   background: transparent;
   transition: 0.2s ease-in-out;
@@ -325,30 +361,6 @@ html {
   border: 2px solid #fff;
 }
 
-#details {
-  margin: 6vh 0px;
-}
-
-.btn_social {
-  font-size: 20px;
-  color: #fff;
-  margin: 20px 10px;
-  padding: 15px 18px;
-  border-radius: 50%;
-  background: #000;
-  transition: 0.4s ease-in-out;
-}
-
-.btn_social:hover {
-  color: #000;
-  background: #fff;
-  cursor: pointer;
-}
-
-.fa-twitter {
-  color: #1da1f2;
-}
-
 #footer {
   width: 100%;
   padding: 2vh 0px;
@@ -367,7 +379,7 @@ html {
   -moz-animation: Gradient 20s ease infinite;
   -o-animation: Gradient 20s ease infinite;
   animation: Gradient 20s ease infinite;
-  font-family: "Comfortaa", cursive;
+  font-family: 'Comfortaa', cursive;
   text-decoration: none;
 }
 
@@ -385,122 +397,52 @@ button:focus {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #000;
+  background: #9b9898;
 }
 
-::-webkit-scrollbar-thumb:hover {
-  background: #555;
-}
-
-@media (max-width: 900px) {
+/* Media query for medium screens */
+@media (max-width: 1024px) {
   .project img {
-    min-width: 300px;
-    height: 200px;
+    max-width: 100%;
+    margin-bottom: 1rem;
   }
 
-  .btn_one {
-    font-size: 16px;
+  .project {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .project-description-wrapper {
+    margin-left: 0;
+    text-align: center;
   }
 }
 
-@media (max-width: 750px) {
+/* Media query for small screens */
+@media (max-width: 768px) {
+  #name-logo img {
+    width: 80%;
+  }
+
   #tagline {
-    font-size: 30px;
-    margin-top: 20%;
+    font-size: 18px;
   }
 
   #links a {
+    font-size: 16px;
     margin: 0px 10px;
   }
-  .skills-icons {
-    flex-wrap: wrap;
-    text-align: center;
-    justify-content: flex-start;
-  }
-
-  .project {
-    flex-direction: column;
-  }
 
   .project img {
-    margin-bottom: 5%;
+    max-width: 100%;
   }
 
-  .project-description {
-    margin-left: 0;
-  }
-
-  #about {
-    width: 90%;
-  }
-
-  .profile-pic {
-    max-width: 200px;
-  }
-}
-
-@media (max-width: 500px) {
-  #name-logo img {
-    height: 80px;
-    width: 300px;
-  }
-
-  #links a {
-    margin: 0px 5px;
-  }
-
-  #tagline {
-    font-size: 25px;
-    margin-top: 25%;
-    width: 80%;
-  }
-
-  .project {
-    width: 100%;
-  }
-
-  .skills-icons {
-    justify-content: flex-start;
-  }
-
-  .project {
-    flex-direction: column;
-  }
-
-  .project img {
-    margin-bottom: 5%;
-  }
-
-  .project-description {
-    margin-left: 0;
-  }
-
-  #contact form {
-    width: 100%;
-  }
-
-  #contact form input {
-    width: 100%;
-    padding: 10px 0px;
-  }
-
-  #contact form textarea {
-    width: 100%;
-    padding: 10px 0px;
-  }
-
-  #work {
-    width: 100%;
-  }
-
-  #porfolio {
-    width: 100%;
+  .project-description-wrapper {
+    padding: 0 1rem;
   }
 
   #about {
     flex-direction: column;
-    width: 80%;
-    margin: 0 auto;
   }
 
   #about p {
@@ -508,40 +450,60 @@ button:focus {
   }
 
   .profile-pic {
-    align-self: center;
-    margin-right: 5%;
-    width: 100%;
+    margin: 0 auto;
   }
 }
 
-@media (max-width: 350px) {
-  #name-logo img {
-    height: 60px;
-    width: 200px;
-  }
-
-  #links {
+/* Media query for extra small screens */
+@media (max-width: 480px) {
+  #header {
     display: flex;
     flex-direction: column;
+    align-items: center;
+  }
+
+  #name-logo img {
+    width: 80%;
   }
 
   #tagline {
-    font-size: 20px;
-    margin-top: 35%;
+    font-size: 18px;
   }
 
-  .btn_social {
-    margin: 15px 10px;
-    padding: 5px 5px;
+  #links {
+    width: 100%;
+  }
+
+  #links a {
+    font-size: 14px;
+    margin-right: -10px;
+    margin-left: -4px;
   }
 
   #about p {
     font-size: 14px;
+    margin-top: 8%;
   }
 
   .project img {
-    min-width: 200px;
-    height: 200px;
+    max-width: 100%;
+  }
+
+  .project-description-wrapper {
+    padding: 0 1rem;
+  }
+  .skills-icons {
+    padding: 0 10px;
+    justify-content: space-evenly;
+  }
+
+  .developer-icon {
+    font-size: 1.7rem;
+    padding-top: 5px;
+  }
+
+  .developer-icon-name {
+    font-size: 0.5rem;
   }
 
   .project-description {
@@ -550,30 +512,26 @@ button:focus {
 
   .btn_one,
   .btn_two {
-    padding: 5px 25px;
-    font-size: 14px;
+    padding: 10px 20px;
+    font-size: 12px;
     margin: 30px 10px;
   }
 
-  #skills {
-    width: 100%;
+  #portfolio div h1 {
+    font-size: 30px;
   }
 
-  .skills-icons {
-    display: flex;
-    justify-content: space-evenly;
-    padding: 0;
+  .project-box h2 {
+    font-size: 18px;
   }
 
-  .developer-icon {
-    font-size: 1.5rem;
-  }
-
-  #footer {
+  #contact form input {
+    width: 80%;
     font-size: 14px;
   }
 
-  #footer a {
-    font-size: 12px;
+  #contact form textarea {
+    width: 100%;
+    font-size: 14px;
   }
 }
